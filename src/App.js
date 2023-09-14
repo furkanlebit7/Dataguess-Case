@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+//Components
+import Layout from "./Layouts/Layout";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-grad">
+      <div className="max-w-5xl py-10 md:py-20 px-4 mx-auto flex justify-center flex-col">
+        <Layout />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
